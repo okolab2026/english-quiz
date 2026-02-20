@@ -28,43 +28,54 @@ q5 = st.text_input("ここに入力してください", key="q5")
 
 if st.button("結果をみる"):
 
-  # Q1
-  if q1.strip().lower() == "pear":
-     score += 1
-     st.success("Q1 ⭕ 正解！")
-  else :
-     st.error("Q1 ❌ 不正解(正解はpear)")
-
-  # Q2
-  if q2.strip().lower() == "giraffe":
-      score += 1
-      st.success ("Q2⭕ 正解！")
-  else:
-      st.error("Q2 ❌不正解（正解はgiraffe)")
-
-  # Q3 
-  if q3.strip().lower() == "sheep":
+    # Q1
+    if q1.strip().lower() == "pear":
         score += 1
-        st.success(" Q3 ⭕正解！")
-  else: 
-        st.error("Q3 ❌不正解（正解はsheep)")
+        st.success("Q1 ⭕ 正解！")
+    else:
+        st.error("Q1 ❌ 不正解(正解はpear)")
 
-  # Q4
-  if q4.strip().lower() ==  "tiger":
-        score += 1  
-        st.success("Q4 ⭕正解！")
-  else:
-       st.error("Q4 ❌不正解（正解はtiger)")
-
-  # Q5
-  if q5.strip().lower() == "apple":
+    # Q2
+    if q2.strip().lower() == "giraffe":
         score += 1
-        st.success("Q5 ⭕正解！")
-  else:
-        st.error("Q5 ❌不正解（正解はapple)")
+        st.success("Q2 ⭕ 正解！")
+    else:
+        st.error("Q2 ❌ 不正解（正解はgiraffe）")
 
- st.markdown("---")
- st.markdown(f"## 🎉 あなたの点数は {score} / 5 点です！")
+    # Q3
+    if q3.strip().lower() == "sheep":
+        score += 1
+        st.success("Q3 ⭕ 正解！")
+    else:
+        st.error("Q3 ❌ 不正解（正解はsheep）")
+
+    # Q4
+    if q4.strip().lower() == "tiger":
+        score += 1
+        st.success("Q4 ⭕ 正解！")
+    else:
+        st.error("Q4 ❌ 不正解（正解はtiger）")
+
+    # Q5
+    if q5.strip().lower() == "apple":
+        score += 1
+        st.success("Q5 ⭕ 正解！")
+    else:
+        st.error("Q5 ❌ 不正解（正解はapple）")
+
+    st.markdown("---")
+    st.markdown(f"## 🎉 あなたの点数は {score} / 5 点です！")
+
+
+
+
+
+
+
+
+
+
+
 
 
 
